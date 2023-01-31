@@ -12,3 +12,9 @@
 .form label {
   text-align: start;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: start;
+}

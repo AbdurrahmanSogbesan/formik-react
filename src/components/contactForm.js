@@ -32,19 +32,19 @@ function ContactForm() {
       <label htmlFor="fullName">Full Name</label>
       <input id="fullName" type="text" {...getFieldProps("fullName")} />
       {touched.fullName && errors.fullName ? (
-        <div style={{ color: "red" }}>{errors.fullName}</div>
+        <div className="error">{errors.fullName}</div>
       ) : null}
 
       <label htmlFor="email">Email</label>
       <input id="email" type="email" {...getFieldProps("email")} />
       {touched.email && errors.email ? (
-        <div style={{ color: "red" }}>{errors.email}</div>
+        <div className="error">{errors.email}</div>
       ) : null}
 
       <label htmlFor="message">Message</label>
       <textarea id="message" type="textarea" {...getFieldProps("message")} />
       {touched.message && errors.message ? (
-        <div style={{ color: "red" }}>{errors.message}</div>
+        <div className="error">{errors.message}</div>
       ) : null}
 
       <button type="submit" disabled={isSubmitting || !isValid}>
