@@ -22,7 +22,7 @@ function BaseForm() {
     console.log("message:", message);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <label htmlFor="fullName">Full Name</label>
       <input
         id="fullName"
